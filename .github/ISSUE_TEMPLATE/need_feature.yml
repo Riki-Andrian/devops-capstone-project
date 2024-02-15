@@ -38,8 +38,8 @@ body:
   - type: markdown
     attributes:
       value: |
-      ### Acceptance Criteria
-      gherkin
+        ### Acceptance Criteria
+        gherkin
   - type: textarea
     id: given
     attributes:
