@@ -1,14 +1,13 @@
-## User Story
-
+## Need Function
 **As a** [role],  
-**I want** [function],  
+**I need** [function],  
 **So that** [benefit].  
 
 ### Details and Assumptions
-* [Document any relevant information you know].  
+    * [document what you know]. 
 
 ### Acceptance Criteria
-   gherkin
-Given [some context],
-When [certain action is taken],
-Then [the outcome of action is observed].
+    gherkin 
+    Given [some context],
+    When [certain action is taken],
+    Then [the outcome of action is observed].
