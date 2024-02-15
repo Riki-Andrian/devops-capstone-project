@@ -29,7 +29,8 @@ body:
       required: true
   - type: markdown
     attributes:
-      value: ### Details and Assumptions
+      value: |
+        ### Details and Assumptions
   - type: textarea
     id: details
     attributes:
