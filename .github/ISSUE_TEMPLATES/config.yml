@@ -1,11 +1,31 @@
-userStory:
-  role: "[role]"
-  function: "[function]"
-  benefit: "[benefit]"
+name: User Story Issue
+about: Describe the user story, details, and acceptance criteria
 
-detailsAndAssumptions: "[Document any relevant information you know]"
+on:
+  issues:
+    types:
+      - opened
 
-acceptanceCriteria:
-  given: "[some context]"
-  when: "[certain action is taken]"
-  then: "[the outcome of action is observed]"
+jobs:
+  userStory:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Create GitHub Issue
+      uses: actions/create-issue@v1
+      with:
+        title: 'User Story - [role] - [function]'
+        body: |
+          ## User Story
+          **As a** [role],
+          **I want** [function],
+          **So that** [benefit].
+
+          ### Details and Assumptions
+          * [Document any relevant information you know].
+
+          ### Acceptance Criteria
+          Given [some context],
+          When [certain action is taken],
+          Then [the outcome of action is observed].
+        labels: user-story
