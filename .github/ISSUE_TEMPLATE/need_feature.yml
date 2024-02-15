@@ -40,17 +40,17 @@ body:
       value: |
       ### Acceptance Criteria
       gherkin
-    - type: textarea
+  - type: textarea
     id: given
     attributes:
       label: Given
       placeholder: some context
-    - type: textarea
+  - type: textarea
     id: when
     attributes:
       label: When
       placeholder: Certain action is taken
-    - type: textarea
+  - type: textarea
     id: then
     attributes:
       label: Then
