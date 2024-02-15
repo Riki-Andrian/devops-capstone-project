@@ -1,5 +1,5 @@
-name: Need Feature
-description: Request a feature
+name: User Story
+description: User Story
 labels: ["enhancement"]
 body:
   - type: markdown
