@@ -1,0 +1,57 @@
+name: Need Feature
+description: Request a feature
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the sections below to properly describe the new feature you are suggesting.
+  - type: input
+    id: role
+    attributes:
+      label: Role
+      placeholder: As a
+    validations:
+      required: true
+  - type: input
+    id: function
+    attributes:
+      label: Function
+      placeholder: Function you need
+    validations:
+      required: true
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Benefit
+      placeholder: Benefit
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: ### Details and Assumptions
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      placeholder: Document what you know
+  - type: markdown
+    attributes:
+      value: |
+      ### Acceptance Criteria
+      gherkin
+    - type: textarea
+    id: given
+    attributes:
+      label: Given
+      placeholder: some context
+    - type: textarea
+    id: when
+    attributes:
+      label: When
+      placeholder: Certain action is taken
+    - type: textarea
+    id: then
+    attributes:
+      label: Then
+      placeholder: The outcome of action is observed
