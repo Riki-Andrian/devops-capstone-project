@@ -125,6 +125,12 @@ class TestAccountService(TestCase):
 
     # ADD YOUR TEST CASES HERE ...
 
+    def test_delete_account(self):
+        account = self._create_accounts(1)[0]
+        resp = self.client.delete(f"{BASE_URL}/{account.id}")
+        self.assertEqual(resp.status_code, status.HTTP_204_NO_CONTENT)
+
+
     def test_update_account(self):
         # create an Account to update
         test_account = AccountFactory()
@@ -160,4 +166,3 @@ class TestAccountService(TestCase):
     def test_get_account_not_found(self):
         resp = self.client.get(f"{BASE_URL}/0")
         self.assertEqual(resp.status.code, status.HTTP_404_NOT_FOUND)
-
